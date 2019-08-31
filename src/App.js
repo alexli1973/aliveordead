@@ -43,8 +43,8 @@ export default class App extends Component {
 
     runAction() {
         return [
-            {title: 'start', action: () => this.buildCells()},
-            {title: 'reset', action: () => this.resetGame()}
+            {title: 'start', id: 1, action: () => this.buildCells()},
+            {title: 'reset', id: 2, action: () => this.resetGame()}
         ]
     }
 
@@ -87,7 +87,7 @@ export default class App extends Component {
         return (
             <div className="App">
                 <Header
-                    action = {action}
+                    action={action}
                 />
                 <Cells
                     cells={this.state.cells}

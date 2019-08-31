@@ -4,7 +4,7 @@ import Button from "../UI/Button/Button";
 
 const Header  = props => {
     let actionButtons = props.action.map(action => {
-       return <Button action = {action}/>
+       return <Button action={action} key={action.id}/>
     });
     return(
       <div className='header'>
