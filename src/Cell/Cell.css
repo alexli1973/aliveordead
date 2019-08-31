@@ -1,0 +1,7 @@
+.cell {
+    border-style: solid;
+    border-color: gray;
+}
+.alive {
+    background-color: #1c3b77;
+}
